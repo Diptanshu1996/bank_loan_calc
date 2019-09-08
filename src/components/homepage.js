@@ -17,6 +17,7 @@ export default function Homepage (){
   const cacheInLS = () => {
     var flag = true
     arr = JSON.parse(localStorage.getItem("inputValues")) || []
+    // Check for deuplicate values
     arr.map(e => {
       if(e.amount === amount && e.month === month)
         flag = false
